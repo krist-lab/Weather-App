@@ -24,3 +24,67 @@ body{
     flex-direction: column; 
     gap: 25px; 
 }
+
+.current-weather {
+    border-bottom: 1px solid #eee; /* Separator line */
+    padding-bottom: 25px;
+    margin-bottom: 25px;
+}
+
+.location-date h2 {
+    margin: 0;
+    font-size: 2em;
+    color: #34495e;
+}
+
+.location-date p {
+    color: #7f8c8d;
+    font-size: 0.95em;
+    margin-top: 5px;
+}
+
+.weather-info {
+    display: flex;
+    flex-direction: column; /* Stack icon and temp vertically on mobile */
+    align-items: center;
+    margin-top: 20px;
+}
+
+.weather-info img {
+    width: 100px;
+    height: 100px;
+}
+
+.temperature {
+    font-size: 4em;
+    font-weight: bold;
+    color: #2c3e50;
+    display: flex;
+    align-items: flex-start; /* Align unit correctly */
+    line-height: 1; /* Adjust line height for better alignment */
+}
+
+.temperature .unit {
+    font-size: 0.5em;
+    align-self: flex-start;
+    margin-left: 5px;
+}
+
+.description {
+    font-size: 1.3em;
+    color: #555;
+    margin-top: 10px;
+    text-transform: capitalize; /* Capitalize first letter */
+}
+
+.details {
+    display: flex;
+    justify-content: space-around; /* Distribute items with space around them */
+    margin-top: 20px;
+    font-size: 1.1em;
+    color: #555;
+}
+
+.details p {
+    margin: 0;
+}
