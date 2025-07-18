@@ -8,6 +8,7 @@ body {
     min-height: 100vh;
     background: linear-gradient(to bottom, #AD36CB, #333333);
     box-sizing: border-box;
+    transition: background 1s ease-in-out;
 }
 
 .weather-app {
@@ -46,7 +47,7 @@ body {
     align-items: center;
 }
 
-.search-icon-placeholder { 
+.search-icon-placeholder {
     position: absolute;
     left: 15px;
     width: 20px;
@@ -250,10 +251,6 @@ body {
         font-size: 1em;
     }
 
-    .forecast-section h3 {
-        font-size: 1.5em;
-    }
-
     .forecast-cards {
         justify-content: flex-start;
     }
@@ -302,4 +299,40 @@ body {
         flex: 0 0 90px;
         padding: 10px 5px;
     }
+}
+
+body.clear-sky {
+    background: linear-gradient(to top, #87CEEB, #5DADE2);
+}
+
+body.clouds {
+    background: linear-gradient(to top, #B0BEC5, #78909C);
+}
+
+body.rain {
+    background: linear-gradient(to top, #607D8B, #455A64);
+}
+
+body.drizzle {
+    background: linear-gradient(to top, #90A4AE, #78909C);
+}
+
+body.thunderstorm {
+    background: linear-gradient(to top, #424242, #212121);
+}
+
+body.snow {
+    background: linear-gradient(to top, #CFD8DC, #ECEFF1);
+}
+
+body.mist,
+body.smoke,
+body.haze,
+body.dust,
+body.fog,
+body.sand,
+body.ash,
+body.squall,
+body.tornado {
+    background: linear-gradient(to top, #BDBDBD, #9E9E9E);
 }
